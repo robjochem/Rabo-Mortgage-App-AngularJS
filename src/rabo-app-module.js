@@ -1,0 +1,1 @@
+angular.module('rabo-app', ['rabo-header', 'rabo-rent', 'rabo-calculator', 'components']);

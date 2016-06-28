@@ -1,0 +1,17 @@
+<div id="calculator" data-ng-controller="CalculatorController as calcCtrl">
+    <h2>Uw inkomsten</h2>
+    <form name="frm">
+        <p id="firstP"> Uw inkomen bruto
+            <!--<input id="sliderUser" type="range" min="0" max="100000"> -->
+            <input data-ng-model="calcCtrl.income1" required min="0" id="userIncome" type="number" name="userIncome">
+        </p>
+        <p>Partner brutto jaarinkomen</p>
+        <!-- <input id="sliderPartner" type="range" min="0" max="100000"> -->
+            <input data-ng-model="calcCtrl.income2" required min="0" id="partnerIncome" type="number" name="partnerIncome">
+        </p>
+    </form>
+    <button data-ng-disabled="frm.$invalid" data-ng-click="calcCtrl.getMaxLoan()" id="calculate">Berekenen</button>
+    <p>
+        <span id="resultCalc">{{calcCtrl.maxToLoan | currency:"€"}}</span>
+    </p>
+</div>

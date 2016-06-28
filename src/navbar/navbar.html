@@ -1,0 +1,14 @@
+<header data-ng-controller="NavBarController as navCtrl">
+    <img id="logo">
+    <h1 id="title">Hypotheek calculator</h1>
+    <nav>
+        <ul>
+            <li data-ng-repeat="option in navCtrl.options">
+                <button id={{option.id}}
+                        data-ng-disabled="option.selected"
+                        data-ng-click="navCtrl.handleShowDetails(option.id)"
+                >{{option.name}}</button>
+            </li>
+        </ul>
+    </nav>
+</header>

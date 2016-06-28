@@ -1,0 +1,12 @@
+{
+  "name": "watch-store",
+  "version": "0.0.1",
+  "description": "watch store",
+  "repository": "to be filled in later",
+  "license": "UNLICENSE",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1"
+  }
+}

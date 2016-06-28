@@ -1,0 +1,106 @@
+body {
+	background-color: #ffffff;
+}
+
+header {
+	padding: 5px;
+}
+
+nav {
+	display: block;
+	background-color: #fd6400;
+	height: 20px;
+}
+
+nav ul {
+	padding-left: 0px;
+}
+
+nav ul li {
+	display: inline;
+	align: left;
+	padding-left: 5px;
+}
+
+button {
+	margin      : 0;
+	padding     : 0;
+	border      : 0;
+	font-size: 20px;
+	background-color: #fd6400;
+	border: solid 1px;
+}
+
+nav ul li button{
+	margin      : 0;
+	padding     : 0;
+	border      : 0;
+	font-size: 15px;
+	background-color: #fd6400;
+	border: none;
+}
+
+button:hover{
+	opacity: 0.6;
+	border: solid 1px;
+}
+
+img {
+	display: inline-block;
+	background-color: #ffffff;
+}
+
+#logo {
+	content: url("../img/rabobank-logo-mobile.png");
+	width: 96px;
+	height: 33px;
+}
+
+h1 {
+	font-size: 25px;
+	font-family: Arial;
+	color: #009;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: Arial;
+	color: #009;
+}
+
+input {
+	display: block;
+	height: 15px;
+}
+
+p {
+	font-size: 16px;
+	font-family: Arial;
+
+}
+
+span {
+	font-family: Arial;
+	font-size: 16px;
+}
+
+li {
+	font-size: 16px;
+	font-family: Arial;
+}
+
+
+@media screen and (min-width: 480px) {
+
+	#logo{
+		content: url("../img/rabobank-logo.png");
+		width: 124px;
+		height: 148px;
+	}
+}
+
+input.ng-invalid.ng-touched{
+	border: solid 1px #ff0000;
+	background-color: #ff9999;
+}

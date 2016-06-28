@@ -1,0 +1,10 @@
+<div id="rente" data-ng-controller="RentController as rCtrl">
+    <h2>Actuele hypotheekrente</h2>
+    <span id="interestRate">{{rCtrl.getInterestRate()}}</span>
+    <span>% op basis van 10 jaar</span>
+    <form name="frm"> Gezamelijk jaarinkomen:
+        <input data-ng-model="rCtrl.gezInk" required min="0" id="gezInkInputBox" type="number" name="gezamelijkInkomen">
+    </form>
+    <button data-ng-click="rCtrl.calcIntRate()" data-ng-disabled="frm.$invalid" id="calcInterest">Berekenen bruto maandlast</button>
+    <form id="resultIntCalc">{{rCtrl.resultIntCalc | currency:"€"}}</form>
+</div>
